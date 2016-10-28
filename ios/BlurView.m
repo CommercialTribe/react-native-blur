@@ -1,7 +1,9 @@
 #import "BlurView.h"
+#import "BlurAmount.m"
 
 @implementation BlurView {
   UIVisualEffectView *_visualEffectView;
+  BlurView *blurEffect;
 }
 
 - (void)setBlurType:(NSString *)blurType
@@ -13,19 +15,24 @@
   UIBlurEffect *blurEffect;
 
   if ([blurType isEqual: @"xlight"]) {
-    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+    blurEffect = [BlurAmount effectWithStyle:UIBlurEffectStyleExtraLight];
   } else if ([blurType isEqual: @"light"]) {
-    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    blurEffect = [BlurAmount effectWithStyle:UIBlurEffectStyleLight];
   } else if ([blurType isEqual: @"dark"]) {
-    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    blurEffect = [BlurAmount effectWithStyle:UIBlurEffectStyleDark];
   } else {
-    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    blurEffect = [BlurAmount effectWithStyle:UIBlurEffectStyleDark];
   }
 
-  _visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+   _visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
 }
 
--(void)layoutSubviews
+- (void)setBlurAmount:(NSNumber *)blurAmount
+{
+    [BlurAmount updateBlurAmount:blurAmount];
+}
+
+- (void)layoutSubviews
 {
   [super layoutSubviews];
 

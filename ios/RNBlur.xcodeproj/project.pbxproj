@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206ECA101DC3B44000904D7D /* BlurAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = 206ECA0F1DC3B44000904D7D /* BlurAmount.m */; };
 		A68BD7CC1BC31332005F02DF /* VibrancyView.m in Sources */ = {isa = PBXBuildFile; fileRef = A68BD7C91BC31332005F02DF /* VibrancyView.m */; };
 		A68BD7CD1BC31332005F02DF /* VibrancyViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A68BD7CB1BC31332005F02DF /* VibrancyViewManager.m */; };
 		A68BD7D21BC31341005F02DF /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = A68BD7CF1BC31341005F02DF /* BlurView.m */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		206ECA0F1DC3B44000904D7D /* BlurAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurAmount.m; sourceTree = "<group>"; };
 		A68BD7BC1BC31318005F02DF /* libRNBlur.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNBlur.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A68BD7C81BC31332005F02DF /* VibrancyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibrancyView.h; sourceTree = SOURCE_ROOT; };
 		A68BD7C91BC31332005F02DF /* VibrancyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibrancyView.m; sourceTree = SOURCE_ROOT; };
@@ -51,6 +53,7 @@
 		A68BD7B31BC31318005F02DF = {
 			isa = PBXGroup;
 			children = (
+				206ECA0F1DC3B44000904D7D /* BlurAmount.m */,
 				A68BD7CE1BC31341005F02DF /* BlurView.h */,
 				A68BD7CF1BC31341005F02DF /* BlurView.m */,
 				A68BD7D01BC31341005F02DF /* BlurViewManager.h */,
@@ -129,6 +132,7 @@
 			files = (
 				A68BD7CC1BC31332005F02DF /* VibrancyView.m in Sources */,
 				A68BD7D21BC31341005F02DF /* BlurView.m in Sources */,
+				206ECA101DC3B44000904D7D /* BlurAmount.m in Sources */,
 				A68BD7CD1BC31332005F02DF /* VibrancyViewManager.m in Sources */,
 				A68BD7D31BC31341005F02DF /* BlurViewManager.m in Sources */,
 			);
