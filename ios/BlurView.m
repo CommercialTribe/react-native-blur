@@ -37,6 +37,7 @@
   [super layoutSubviews];
 
   _visualEffectView.frame = self.bounds;
+    [_visualEffectView removeFromSuperview];
   [self insertSubview:_visualEffectView atIndex:0];
 }
 
