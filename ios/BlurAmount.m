@@ -15,6 +15,7 @@
 
 + (instancetype)effectWithStyle:(UIBlurEffectStyle)style
 {
+    localBlurAmount = [NSNumber numberWithInt:20];
     id result = [super effectWithStyle:style];
     object_setClass(result, self);
 
